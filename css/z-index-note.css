@@ -1,0 +1,31 @@
+#menuBtn{
+    z-index: 1000;
+}
+#closeBtn.active{
+    z-index: 1020;
+}
+
+.menu.active {
+    z-index: 1010 ;
+}
+
+.dark-cover.active{
+    z-index: 1005;
+}
+.up{
+    z-index: 800;
+}
+[id^="which-section-"]{
+    z-index: 999;
+}
+.scroll-img{
+    z-index: 8500;
+}
+
+.title-News {
+    z-index: 50;
+}
+
+.designImage-l>.designImage-name{
+    z-index: 750;
+}

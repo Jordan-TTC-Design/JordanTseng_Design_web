@@ -1,0 +1,230 @@
+/*=============================================
+=                  SectionDrawingBow           =
+=============================================*/
+.drawing-header {
+    height: 100px;
+
+}
+
+.change-pages-line {
+    width: 50px;
+    border-top: 1px solid rgb(75, 75, 75);
+}
+
+.drawing-box-out {
+    padding-bottom: 10%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#drawing-title {
+    top: -20px;
+    right: -50px;
+    width: 230px;
+    height: 120px;
+    transform: rotate(25deg);
+    background-image: url(../image/painting-title.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.drawing-box {
+    width: 80%;
+    height: auto;
+    margin: 10% 10% 0% 10%;
+    justify-content: center;
+}
+
+.drawing-row {
+    width: 50%;
+    height: auto;
+    padding: 2.5% 1.25% 2.5% 1.25%;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+    align-content: flex-start;
+}
+
+[id^=drawing-pic-] {
+    background-size: cover;
+    background-position: center center;
+    margin: 2.5%;
+}
+
+#drawing-pic-1 {
+    background-image: url(../image/drawing/draw1.jpg);
+    height: 380px;
+    width: 95%;
+}
+
+#drawing-pic-2 {
+    background-image: url(../image/drawing/draw2.jpg);
+    height: 300px;
+    width: 55%;
+}
+
+#drawing-pic-3 {
+    background-image: url(../image/drawing/draw3.jpg);
+    height: 200px;
+    width: 95%;
+}
+
+#drawing-pic-4 {
+    background-image: url(../image/drawing/draw4.jpg);
+    height: 300px;
+    width: 35%;
+}
+
+#drawing-pic-5 {
+    background-image: url(../image/drawing/draw5.jpg);
+    height: 200px;
+    width: 95%;
+}
+
+#drawing-pic-6 {
+    background-image: url(../image/drawing/draw6.jpg);
+    height: 500px;
+    width: 95%;
+}
+
+.drawing-cover {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    transition: all .5s ease;
+}
+
+.drawing-cover:hover {
+    opacity: 0;
+}
+
+
+.pic-pop-out {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-hide {
+    display: none;
+}
+
+.pic-pop-bg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.pic-pop-box {
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+    /* background-color: white; */
+    padding: 8% 15%;
+}
+
+.pic-pop-exit {
+    top: 1%;
+    left: 1%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../image/icon-cross.png);
+}
+
+.pic-pop-picture {
+    border: 8px solid rgb(228, 222, 223);
+    /* margin: 10%; */
+    /* min-height: 800px; */
+    /* min-width: 600px; */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+@media(max-width:1200px) {
+    .drawing-row {
+        width: 50%;
+    }
+}
+
+@media(max-width:900px) {
+
+    .prev-row p,
+    .next-row p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:800px) {
+
+    .drawing-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drawing-row {
+        width: 80%;
+    }
+
+    .pic-pop-box {
+        margin: 0;
+        width: 90%;
+        height: 1000px;
+        padding: 0;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    [id^=designs-items-pic-],
+    .designs-items-inf {
+        height: 250px;
+        width: 250px;
+    }
+
+    .designs-items-box {
+        flex-direction: column;
+    }
+
+    .designs-items-box-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .pic-pop-box {
+        width: 90%;
+        height: 800px;
+    }
+}
+
+@media(max-width:500px) {
+    .drawing-header {
+        height: 60px;
+        top: 60px;
+    }
+
+    .drawing-row {
+        width: 100%;
+    }
+
+    .pic-pop-box {
+        width: 90%;
+        height: 600px;
+    }
+
+    .prev-row,
+    .next-row {
+        display: none;
+    }
+}

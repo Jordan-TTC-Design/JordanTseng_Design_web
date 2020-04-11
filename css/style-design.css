@@ -1,0 +1,263 @@
+/*=============================================
+=                  changepages                 =
+=============================================*/
+
+.change-pages-line {
+    width: 50px;
+    border-top: 1px solid rgb(75, 75, 75);
+}
+
+.prev-row {
+    writing-mode: vertical-lr;
+    left: 0;
+}
+
+.next-row {
+    right: 0;
+    writing-mode: vertical-rl;
+}
+
+.change-pages-box {
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.change-box-blank {
+    height: 20px;
+    width: 20px;
+}
+
+.change-pages-box>p {
+    transition: all .5s ease;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(75, 75, 75);
+}
+
+.change-pages-box>p:hover {
+    opacity: 0.5;
+    font-size: 36px;
+}
+
+/*=============================================
+=                  header                      =
+=============================================*/
+.designs-header {
+    /* background-color: rgb(253, 253, 253); */
+    height: 300px;
+    background-image: url(../image/designs/pages-design.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+    filter: grayscale(30%)
+}
+
+.designs-title {
+    top: -100px;
+    align-items: center;
+}
+
+.designs-title>h4 {
+    color: rgb(222, 222, 222);
+    font-size: 24px;
+}
+
+.designs-title-line {
+    margin: 20px;
+    border-right: 2px solid rgb(222, 222, 222);
+    height: 100px;
+}
+
+/*=============================================
+=                  design box                  =
+=============================================*/
+.designs-box-out {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 10%;
+}
+
+.designs-box {
+    width: 100%;
+    height: auto;
+}
+
+
+[id^=designs-items-pic-],
+.designs-items-inf {
+    margin: 50px;
+    height: 500px;
+    width: 500px;
+}
+
+[id^=designs-items-pic-] {
+    margin-right: 25px;
+    background-size: cover;
+    background-position: center center;
+    transition: all .5s ease;
+}
+
+#designs-items-pic-1 {
+    background-image: url(../image/designs/railway/taiwanRailway-1.png)
+}
+
+#designs-items-pic-1:hover {
+    background-image: url(../image/designs/railway/railway-web.jpg)
+}
+
+.designs-items-inf {
+    margin-left: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.designs-items-inf>h5 {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.designs-items-inf>h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.designs-items-inf-line {
+    height: 100px;
+    border-right: 1px solid rgb(75, 75, 75);
+}
+
+.designs-items-inf>p {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+[id^=see-them-all-box-] {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(75, 75, 75);
+    color: rgb(222, 222, 222);
+    transition: all .5s ease;
+}
+
+[id^=see-them-all-box-]:hover {
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:1200px) {
+
+    [id^=designs-items-pic-],
+    .designs-items-inf {
+        margin: 50px 10px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .designs-items-inf>h5 {
+        font-size: 8px;
+        margin: 5px;
+    }
+
+    .designs-items-inf>h1 {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .designs-items-inf-line {
+        height: 50px;
+        border-right: 1px solid rgb(75, 75, 75);
+    }
+
+    .designs-items-inf>p {
+        margin: 5px;
+    }
+
+    [id^=see-them-all-box-] {
+        height: 40px;
+        width: 120px;
+        font-size: 12px
+    }
+
+}
+
+@media(max-width:900px) {
+
+    [id^=designs-items-pic-],
+    .designs-items-inf {
+        margin: 50px 10px;
+        height: 300px;
+        width: 300px;
+    }
+    .designs-items-inf>p {
+font-size:12px;
+    }
+    .prev-row p,
+    .next-row p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:800px) {
+    .designs-header {
+        background-attachment: scroll;
+    }
+
+    [id^=designs-items-pic-],
+    .designs-items-inf {
+        margin: 25px 10px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .designs-items-box {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .designs-items-box-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .change-pages-line {
+        width: 50px;
+        border-top: 1px solid rgb(75, 75, 75);
+    }
+}
+
+@media(max-width:600px) {
+
+    [id^=designs-items-pic-],
+    .designs-items-inf {
+        height: 250px;
+        width: 250px;
+    }
+    .designs-items-inf {
+        height: 350px;
+    }
+    .designs-items-box {
+        flex-direction: column;
+    }
+
+    .designs-items-box-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media(max-width:500px) {
+    .designs-header {
+        top: 60px;
+    }
+
+    .prev-row,
+    .next-row {
+        display: none;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 連結Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- 客製化Bootstrap CSS -->
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ovo|Quicksand|Righteous" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-drawing.css">
+    <link rel="stylesheet" href="../css/style-uiux.css">
+    <!-- 連結Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- 連結js -->
+    <script src="../js/main.js"></script>
+    <script src="../js/drawing.js"></script>
+    <title>UI & UX | Jordan Tsneg</title>
+</head>
+
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar">
+
+        <div>
+            <img id="menuBtn" src="../image/icon-menu.png" alt="menu">
+        </div>
+    </nav>
+    <div id="navbar-top" class="flex">
+        <div id="navbar-top-logo"></div>
+        <div class="navbar-pages-box flex">
+            <ul class="list-inline">
+                <li class="list-inline-item pages-small">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/aboutme.html">About</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/product.html">Product</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/design.html">Design</a>
+                </li>
+                <li class="list-inline-item pages-border">
+                    <a href="../page/uiux.html">UI & UX</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/drawing.html">Painting</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div>
+            <img id="closeBtn" src="../image/icon-menu.png" alt="menu">
+        </div>
+        <div id="menu-table" class="">
+            <div class="menu-list">
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../page/aboutme.html">About</a></p>
+                <p><a href="../page/product.html">Product</a></p>
+                <p><a href="../page/design.html">Design</a></p>
+                <p><a href="../page/uiux.html">UI & UX</a></p>
+                <p><a href="../page/drawing.html">Painting</a></p>
+            </div>
+        </div>
+        <div class="menu-name">
+            <span style="font-size: 6px">Product by</span>
+            <span style="font-size: 16px">Jordan Tseng</span>
+        </div>
+    </div>
+    <div class="dark-cover"></div>
+    <div class="up">
+        <a id="scrollupBtn" href="#header">
+            <img id="upBtn" src="../image/up.png" alt="up">
+        </a>
+    </div>
+    <div class="prev-row">
+        <div id="prev-design" class="flex-center-center change-pages-box">
+            <div class="change-pages-line"></div>
+            <div class="change-box-blank"></div>
+            <p><a href="../page/design.html">Design</a></p>
+        </div>
+    </div>
+    <div class="next-row">
+        <div id="next-drawing" class="flex-center-center change-pages-box">
+            <div class="change-pages-line"></div>
+            <div class="change-box-blank"></div>
+            <p><a href="../page/drawing.html">Painting</a></p>
+        </div>
+    </div>
+    <!-- nav end -->
+    <!-- Header Start -->
+    <header id="header" class="uiux-header flex-center-center position-re">
+        <div class="uiux-title position-ab flex-center-center">
+            <h4>My Designs</h4>
+            <!-- <div class="uiux-title-line"></div> -->
+        </div>
+    </header>
+    <div id="section1" class="uiux-box-out flex-column position-re">
+
+        <div class="uiux-box flex-column position-re">
+            <div class="uiux-items-box flex-center-center">
+                <div id="uiux-items-pic-1"></div>
+                <div class="uiux-items-inf flex-column">
+                    <h5>Web Design</h5>
+                    <h1>Taipei Restaurant <br>Selected Webside</h1>
+                    <div class="uiux-items-inf-line"></div>
+                    <p>Deciding restaurant is always the bigest problem that we have everyday.Specialy we wanted to
+                        have meal with friends or date.
+                        we dont want them to feel we are hesitant person.So this website provide a radom restaurant
+                        selecter that can choose what should we eat for you tonight.
+                    </p>
+                    <div id="see-them-all-box-1" class="flex-center-center">
+                        <p><a href="../page/uiux-taipeifood.html">See Them All</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="uiux-items-box flex-center-center uiux-items-box-reverse ">
+                <div class="uiux-items-inf flex-column">
+                    <h5>Service Design</h5>
+                    <h1>Service Design<br>for Human and Pet Symbiotic Park</h1>
+                    <div class="uiux-items-inf-line"></div>
+                    <p>Pet become the kid for a lot of family in modern society,but most of the dog park are far from
+                        neighbor in Taipei. This sistuation can cause many issue by walking dogs in the park that
+                        enstablish with thinking dogs. So though this project you can know how service design used in
+                        other design field and giving suggest for furture dog's friendly environment.</p>
+                    <div id="see-them-all-box-2" class="flex-center-center">
+                        <p><a href="../page/uiux-dogpark.html">See Them All</a></p>
+                    </div>
+                </div>
+                <div id="uiux-items-pic-2"></div>
+            </div>
+            <div class="uiux-items-box flex-center-center">
+                <div id="uiux-items-pic-3"></div>
+                <div class="uiux-items-inf flex-column">
+                    <h5>Application Serface</h5>
+                    <h1>Health & Sport <br>Application Design</h1>
+                    <div class="uiux-items-inf-line"></div>
+                    <p>The frist interface design that I did. This is coorperate with a company which wanted to provide
+                        a service connect insurance agency,doctor and patient. By using this application and a
+                        detector,patient's real time data and status will notify agency and doctor immediately. </p>
+                    <div id="see-them-all-box-3" class="flex-center-center">
+                        <p><a href="../page/uiux-healthapp.html">See Them All</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="to-be-continue"></div>
+        <div id="to-be-continue-word">
+            <p>To be continue.</p>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footmenu">
+            <ul class="footmenu-list">
+                <li class="footmenu-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/aboutme.html">About</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/product.html">Product</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/design.html">Design</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/uiux.html">UI & UX</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/drawing.html">Painting</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="contect-me text-center font16">
+            <p class="font14">Contect Me</p>
+        </div>
+        <div class="footSns">
+            <ul class="footSns-list text-center">
+                <li class="footSns-item">
+                    <!-- target="_blank"是新開頁面 -->
+                    <a href="https://www.facebook.com/profile.php?id=100005765470193" target="_blank">
+                        <i id="icon-socialmedia-facebook" class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="footSns-item">
+                    <a href="https://www.linkedin.com/in/ting-chun-tseng-110716b9/" target="_blank">
+                        <i id="icon-socialmedia-linkedin" class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footSns-item">
+                    <a href="#">
+                        <i id="icon-socialmedia-instagram" class="fab fa-instagram" target="_blank"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div style="clear:both"></div> -->
+
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>

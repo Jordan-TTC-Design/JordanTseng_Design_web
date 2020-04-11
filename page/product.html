@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 連結Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- 客製化Bootstrap CSS -->
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ovo|Quicksand|Righteous" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-drawing.css">
+    <link rel="stylesheet" href="../css/style-product.css">
+
+    <!-- 連結Bootstrap.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <!-- 連結js -->
+    <script src="../js/main.js"></script>
+    <script src="../js/drawing.js"></script>
+    <title>Product | Jordan Tsneg</title>
+</head>
+
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar">
+
+        <div>
+            <img id="menuBtn" src="../image/icon-menu.png" alt="menu">
+        </div>
+    </nav>
+    <div id="navbar-top" class="flex">
+        <div id="navbar-top-logo"></div>
+        <div class="navbar-pages-box flex">
+            <ul class="list-inline">
+                <li class="list-inline-item pages-small">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/aboutme.html">About</a>
+                </li>
+                <li class="list-inline-item pages-border">
+                    <a href="../page/product.html">Product</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/design.html">Design</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/uiux.html">UI & UX</a>
+                </li>
+                <li class="list-inline-item pages-small">
+                    <a href="../page/drawing.html">Painting</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div>
+            <img id="closeBtn" src="../image/icon-menu.png" alt="menu">
+        </div>
+        <div id="menu-table" class="">
+            <div class="menu-list">
+                <p><a href="../index.html">Home</a></p>
+                <p><a href="../page/aboutme.html">About</a></p>
+                <p><a href="../page/product.html">Product</a></p>
+                <p><a href="../page/design.html">Design</a></p>
+                <p><a href="../page/uiux.html">UI & UX</a></p>
+                <p><a href="../page/drawing.html">Painting</a></p>
+            </div>
+        </div>
+        <div class="menu-name">
+            <span style="font-size: 6px">Product by</span>
+            <span style="font-size: 16px">Jordan Tseng</span>
+        </div>
+    </div>
+    <div class="dark-cover"></div>
+    <div class="up">
+        <a id="scrollupBtn" href="#header">
+            <img id="upBtn" src="../image/up.png" alt="up">
+        </a>
+    </div>
+    <div class="next-row">
+        <div id="next-design" class="flex-center-center change-pages-box">
+            <div class="change-pages-line"></div>
+            <div class="change-box-blank"></div>
+            <p><a href="../page/design.html">Design</a></p>
+        </div>
+    </div>
+    <!-- nav end -->
+    <!-- Header Start -->
+    <header id="header" class="products-header flex-center-center">
+
+    </header>
+    <div id="section1" class="products-box-out flex-column position-re">
+        <div class="products-title">
+            <h4>My Designs</h4>
+        </div>
+        <div class="products-box flex position-re">
+            <!-- <div id="drawing-title" class="position-ab"></div> -->
+            <div class="products-row flex">
+                <div id="products-items-box-1" value="1">
+                    <div id="products-items-pic-1" onclick="location.href=
+                    '../page/product-bike.html';"></div>
+                    <h3>Baby Rider</h3>
+                    <p><a href="../page/product-bike.html">When public transportation turns green,biking becomes
+                            popular around cities.
+                            It is exhausted and inconvenient when parent walk long distance with a stroller.If the
+                            stroller
+                            can combine with bikes or turn into a baby seat for bike, you can emjoy the journey as you
+                            desired.</a>
+                    </p>
+                </div>
+                <div id="products-items-box-2" value="2">
+                    <div id="products-items-pic-2" onclick="location.href=
+                    '../page/product-g_monitor.html';"></div>
+                    <h3>Gaming Monitor</h3>
+                    <p><a href="../page/product-g_monitor.html">The frist gaming project I did in Foxconn.I used the
+                            element of wings on robort to be the main
+                            design on the rear cover.Wish the unqie sharp can be the spotlight in the shop.Also this
+                            monitor provide alot for
+                            accessories.</a></p>
+                </div>
+
+            </div>
+            <div class="products-row flex">
+                <div id="products-items-box-3" value="3">
+                    <div id="products-items-pic-3" onclick="location.href=
+                    '../page/product-f_chair.html';"></div>
+                    <h3>Furniture Design</h3>
+                    <p><a href="../page/product-f_chair.html">Although it look like a hanger in the picture.In fact it
+                            is a chair main to let people feel
+                            scared when they sit on
+                            it, and let them experience the story I had before.</a></p>
+                </div>
+                <div id="products-items-box-4" value="4">
+                    <div id="products-items-pic-4" onclick="location.href=
+                    '../page/product-xbar.html';"></div>
+                    <h3>XBar Speaker</h3>
+                    <p><a href="../page/product-xbar.html">The speaker is an accessories for Lenovo
+                            monitor.Providing user choose it after they bought some
+                            low peice monitor,but still want some nice voice.It also can change to two mode for
+                            different
+                            situation.</a></p>
+                </div>
+
+            </div>
+            <div class="products-row flex">
+                <div id="products-items-box-5" value="5">
+                    <div id="products-items-pic-5" onclick="location.href=
+                    '../page/product-beebed.html';"></div>
+                    <h3>Bee Accompany Bed</h3>
+                    <p><a href="../page/product-beebed.html">A furniture which is design for people who need to
+                            accompany their Hospitalize family. This
+                            project main concept is to force student to think with the environment. By using design
+                            thinking and process like persona , I keep sculpture the shape and function until it really
+                            suit the jeremy map. Hope this kind of process can be done in every design school.</a></p>
+                </div>
+                <div id="products-items-box-6" value="6">
+                    <div id="products-items-pic-6" onclick="location.href=
+                    '../page/product-p_monitor.html';"></div>
+                    <h3>Protable Monitor</h3>
+                    <p><a href="../page/product-p_monitor.html">When monitor industry become full. All the company
+                            start to open new battle field. Though the
+                            research we found out a protable monitor like tablet can be the next generation. So this
+                            monitor is the frist extended project we prepose to customer.</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="to-be-continue"></div>
+        <div id="to-be-continue-word">
+            <p>To be continue.</p>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footmenu">
+            <ul class="footmenu-list">
+                <li class="footmenu-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/aboutme.html">About</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/product.html">Product</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/design.html">Design</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/uiux.html">UI & UX</a>
+                </li>
+                <li class="footmenu-item">
+                    <a href="../page/drawing.html">Painting</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="contect-me text-center font16">
+            <p class="font14">Contect Me</p>
+        </div>
+        <div class="footSns">
+            <ul class="footSns-list text-center">
+                <li class="footSns-item">
+                    <!-- target="_blank"是新開頁面 -->
+                    <a href="https://www.facebook.com/profile.php?id=100005765470193" target="_blank">
+                        <i id="icon-socialmedia-facebook" class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="footSns-item">
+                    <a href="https://www.linkedin.com/in/ting-chun-tseng-110716b9/" target="_blank">
+                        <i id="icon-socialmedia-linkedin" class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footSns-item">
+                    <a href="#">
+                        <i id="icon-socialmedia-instagram" class="fab fa-instagram" target="_blank"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div style="clear:both"></div> -->
+
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>

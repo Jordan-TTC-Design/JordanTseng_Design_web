@@ -1,0 +1,1045 @@
+/* 在此撰寫此專案的CSS Style */
+
+/*=============================================
+=                  General                    =
+=============================================*/
+
+/* .section-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+} */
+
+body {
+    margin: 0;
+}
+
+.container-box {
+    position: relative;
+}
+
+.position-R {
+    position: relative;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.dashed-line {
+    border-top: 1px dashed rgb(216, 216, 216);
+    width: 80%;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: rgb(75, 75, 75);
+}
+
+.pages-small {
+    opacity: 0.8;
+    font-size: 10px;
+}
+
+a,
+a:hover {
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+}
+
+/*=============================================
+=                  nav                        =
+=============================================*/
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    padding: 0;
+    top: 0;
+}
+
+#navbar-top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(228, 222, 223);
+    opacity: 0.8;
+    justify-content: flex-end;
+    /* align-items: center; */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-pages-box {
+    width: auto;
+    /* min-width: 400px; */
+    margin-right: 200px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.list-inline-item {
+    padding: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.list-inline-item:hover {
+    opacity: 0.5;
+}
+
+.list-inline-item>a {
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+}
+
+.pages-border {
+    border: 1.5px solid rgb(75, 75, 75);
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 5000;
+}
+
+#closeBtn {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    position: fixed;
+    opacity: 0;
+    display: none;
+}
+
+#closeBtn.active {
+    display: block;
+    z-index: 6500;
+    opacity: 1;
+}
+
+#menuBtn:hover,
+#closeBtn:hover {
+    opacity: 0.5;
+}
+
+.menu {
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    background: rgb(46, 46, 46);
+    position: fixed;
+    right: -40%;
+    top: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    transition: all .5s ease;
+    z-index: 5000;
+}
+
+.menu.active {
+    right: 0;
+    z-index: 5000;
+}
+
+#menu-table {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    width: 80%;
+    text-align: center;
+}
+
+.menu-list a {
+    color: rgb(222, 222, 222);
+}
+
+.menu-list>p {
+    transition: all .5s ease;
+    font-size: 20px;
+    margin: 26px 0;
+}
+
+.menu-list>p:hover {
+    padding-right: 30px;
+    background-color: rgb(128, 128, 128);
+}
+
+.menu-name {
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
+    color: rgb(222, 222, 222);
+}
+
+.dark-cover {
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+    left: -60%;
+    top: 0;
+    background: black;
+    opacity: 0;
+    transition: all .5s ease;
+    /* 取消其可被點擊的特性 */
+    pointer-events: none;
+    z-index: 800;
+}
+
+.dark-cover.active {
+    opacity: 0.7;
+    /* 使黑背景可被點擊 */
+    pointer-events: auto;
+    left: 0;
+    z-index: 4500;
+}
+
+.up {
+    position: fixed;
+    width: 50px;
+    bottom: 50px;
+    right: 20px;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: 800;
+}
+
+.up:hover {
+    opacity: 0.5;
+}
+
+#upBtn {
+    position: relative;
+    width: 50px;
+    bottom: 0;
+}
+
+.which-section {
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+}
+
+.which-section>.first {
+    width: 100%;
+    height: 15%;
+}
+
+[id^="which-section-"] {
+    width: 15%;
+    min-width: 15px;
+    height: 5px;
+    background: gray;
+    z-index: 950;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .5s ease;
+    opacity: 0.3;
+}
+
+[id^="which-section-"].active {
+    opacity: 1;
+    background: rgb(128, 128, 128);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+.header {
+    background-color: rgb(253, 253, 253);
+    height: 700px;
+    background-image: url(../image/Tingchun.png);
+    background-size: 100%;
+    background-position: center center;
+    margin-bottom: 50px;
+}
+
+.logo-lg,
+.header-row {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    background-image: url(../image/logo-1.png);
+    background-size: cover;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+}
+
+#navbar-top-logo {
+    background-image: url(../image/logo-1.png);
+    background-size: cover;
+    background-position: center center;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+    z-index: 500;
+}
+
+.scroll-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2000;
+    transition: all .4s ease;
+}
+
+.scroll-img.scrolling {
+    width: 80px;
+    height: 80px;
+    right: 100%;
+    left: 10px;
+    top: -50px;
+    bottom: calc(100% - 150px);
+    position: fixed;
+}
+
+.intro {
+    position: absolute;
+    bottom: 100px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.intro>p {
+    font-size: 20px;
+    background: black;
+    color: white;
+}
+
+.header-scroll {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    color: rgb(200, 200, 200);
+}
+
+/*=============================================
+=                  sectionNews                     =
+=============================================*/
+
+.sectionNews {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.title-News {
+    position: absolute;
+    width: 20%;
+    top: 120px;
+    left: 12%;
+    z-index: 50;
+}
+
+.blank {
+    width: 100%;
+    height: 80px;
+}
+
+.news-box {
+    padding: 50px;
+    background: rgb(216, 216, 216);
+    color: rgb(122, 167, 235);
+}
+
+.title-News>h1 {
+    font-size: 80px;
+    color: white;
+}
+
+[id^="carouselIamge"] {
+    height: auto;
+    background-size: cover;
+}
+
+#carouselIamge1 {
+    background-image: url(../image/babyseat-main.jpg);
+}
+
+#carouselIamge2 {
+    background-image: url(../image/design-flower.jpg);
+}
+
+#carouselIamge3 {
+    background-image: url(../image/design-light.jpg);
+}
+
+/*=============================================
+=                  sectionAbout                  =
+=============================================*/
+#section-about {
+    width: 100%;
+    padding: 10% 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#about-pic {
+    height: 500px;
+    width: 300px;
+    background-image: url(../image/aboutme/Jordan.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#about-inf {
+    width: 500px;
+    height: 500px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about-inf-content {
+    color: rgb(75, 75, 75);
+    background-color: rgb(228, 222, 222);
+    padding: 8% 10%;
+    top: -10%;
+    width: 110%;
+
+}
+
+.about-inf-content>p {
+    line-height: 1.8;
+}
+
+#about-btn {
+    width: 200px;
+    height: 80px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#about-btn:hover {
+    border: 1px solid rgb(190, 182, 182);
+    color: rgb(190, 182, 182);
+}
+
+.Jordan-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 36px;
+}
+
+
+/*=============================================
+=                  sectionDesign                 =
+=============================================*/
+
+#sectionDesign {
+    width: 100%;
+    height: auto;
+    padding: 10% 10%;
+    background-color: rgb(200, 200, 200);
+}
+
+#section-design-title {
+    width: 80%;
+    text-align: center;
+    top: -25px;
+    font-size: 30px;
+    z-index: 50;
+}
+
+[id^="designImage"] {
+    height: 350px;
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+    filter: grayscale(50%);
+    transition: all .5s ease;
+}
+
+#designImage1 {
+    background-image: url(../image/products/bike/bike-1.jpg);
+}
+
+#designImage2 {
+    background-image: url(../image/products/beebed/beebed-1.jpg);
+}
+
+#designImage3 {
+    background-image: url(../image/uiux/dog/dog-c2.jpg);
+}
+
+#designImage4 {
+    background-image: url(../image/designs/railway/railway-1.jpg);
+}
+
+.designImage-s:hover {
+    background-size: 130%;
+    filter: grayscale(0%);
+}
+
+.designImage-l:hover {
+    filter: grayscale(0%);
+}
+
+.designImage-s>.designImage-name {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    background: white;
+    padding: 20px 20px;
+}
+
+.designImage-l {
+    padding-top: 20px;
+}
+
+.designImage-l:hover {
+    padding-top: 0px;
+}
+
+.designImage-l>.designImage-name {
+    width: auto;
+    position: absolute;
+    left: 30px;
+    padding: 10px 10px;
+    color: rgb(252, 151, 56);
+    transition: all .5s ease;
+}
+
+.designImage-s>.designImage-name>.more,
+.designImage-s>.designImage-name>.more a {
+    background: black;
+    margin: 5px 0;
+    height: 30px;
+    width: 120px;
+    position: relative;
+    line-height: 1;
+    color: white;
+}
+
+
+.designImage-s>.designImage-name>.more>div {
+    position: absolute;
+    right: 15px;
+    color: white;
+}
+
+.designImage-l>.designImage-name>.more {
+    background: white;
+    height: 30px;
+    width: 120px;
+    margin-left: -50px;
+    margin-top: -15px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.designImage-l:hover .more {
+    margin: 5px 0;
+    opacity: 1;
+}
+
+.designImage-l>.designImage-name>.more a,
+.designImage-l>.designImage-name>.more>div {
+    display: inline-block;
+    color: rgb(252, 151, 56);
+    padding-left: 5px;
+}
+
+.more :hover {
+    cursor: pointer;
+}
+
+/*=============================================
+=                  SectionWhatICan             =
+=============================================*/
+#section-whatICan {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 5% 10%;
+    justify-content: space-around;
+}
+
+[id^=ican-box-] {
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-line-up {
+    margin: 50px 0;
+    height: 80px;
+    border-left: 1px solid gray;
+    position: absolute;
+    top: -90px;
+}
+
+.box-line-bot {
+    /* margin: 20px 0 0 0 ; */
+    height: 70px;
+    border-left: 1px solid gray;
+    position: absolute;
+    bottom: -50px;
+}
+
+[id^=ican-box-pic-] {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 60px 0;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+[id^=ican-box-pic-]:hover {
+    opacity: 0.6;
+}
+
+
+#ican-box-pic-product {
+    background-image: url(../image/products/bike/bike-1.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+#ican-box-pic-design {
+    background-image: url(../image/ican2.png);
+    background-size: cover;
+    background-position: center left;
+}
+
+#ican-box-pic-drawing {
+    background-image: url(../image/drawing/draw1.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+#ican-box-pic-uiux {
+    background-image: url(../image/uiux/health/health-1.jpg);
+    background-size: cover;
+    background-position: center left;
+}
+
+.ican-name {
+    font-size: 20px;
+}
+
+.ican-content {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*=============================================
+=                  Footer                     =
+=============================================*/
+
+#footer {
+    background: rgb(228, 222, 223);
+    padding: 30px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.footmenu {
+    width: 25%;
+    text-align: center;
+    display: flex;
+}
+
+.footer il {
+    list-style: none;
+}
+
+.footSns-list,
+.footmenu-list {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1;
+    padding: 0;
+}
+
+.footmenu-item {
+    display: inline-block;
+    width: 60px;
+    margin: 5px 0;
+}
+
+.footmenu-item>a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+
+}
+
+.footmenu-item>a:hover {
+    opacity: 0.7;
+}
+
+.footSns-item {
+    display: inline-block;
+}
+
+.footSns-item>a {
+    padding: 0 10px;
+}
+
+.text-black {
+    color: rgb(75, 75, 75);
+}
+
+[id^="icon-socialmedia"] {
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+}
+
+[id^="icon-socialmedia"]:hover {
+    opacity: 0.7;
+}
+
+.contect-me {
+    /* position: absolute; */
+    /* right: 0;
+    left: 0; */
+    /* top: 0;
+    bottom: 0; */
+    margin: auto;
+    color: rgb(75, 75, 75);
+    width: auto;
+    height: auto;
+}
+
+/*=============================================
+=                 aboutme-SectionAbout            =
+=============================================*/
+
+
+
+.aboutme-section-about {
+    width: 100%;
+    padding: 10% 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*=============================================
+=                  changepages                 =
+=============================================*/
+.prev-row,
+.next-row {
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+    width: 10%;
+    z-index: 80;
+    padding-top: 20%;
+}
+
+.change-pages-line {
+    width: 80px;
+    border-top: 1px solid rgb(75, 75, 75);
+}
+
+.prev-row {
+    writing-mode: vertical-lr;
+    left: 0;
+}
+
+.next-row {
+    right: 0;
+    writing-mode: vertical-rl;
+}
+
+.change-pages-box {
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.change-box-blank {
+    height: 20px;
+    width: 20px;
+}
+
+.change-pages-box>p {
+    transition: all .5s ease;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(75, 75, 75);
+}
+
+.change-pages-box>p:hover {
+    opacity: 0.5;
+    font-size: 36px;
+}
+
+/*=============================================
+=           design uiux的see them all            =
+=============================================*/
+#to-be-continue {
+    height: 100px;
+    border-left: 1px solid rgb(75, 75, 75);
+}
+
+#to-be-continue-word {
+    margin: 20px 0;
+}
+
+[id^=see-them-all-box-]>p>a {
+    color: rgb(222, 222, 222);
+    text-decoration: none;
+}
+
+@media (max-width:1200px) {
+    .navbar-pages-box {
+        margin-right: 120px;
+        flex-direction: row;
+    }
+
+    [id^=ican-box-] {
+        width: 155px;
+    }
+
+
+
+}
+
+@media (max-width:800px) {
+    .menu {
+        width: 60%;
+        right: -60%;
+    }
+
+    .navbar-pages-box {
+        display: none;
+    }
+
+    #navbar-top-logo {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .change-pages-line {
+        width: 50px;
+        border-top: 1px solid rgb(75, 75, 75);
+    }
+
+    #section-whatICan {
+        min-height: 500px;
+    }
+
+    [id^=ican-box-] {
+        width: 120px;
+    }
+
+    [id^=ican-box-pic-] {
+        height: 200px;
+    }
+
+    .designImage-l>.designImage-name {
+        top: 50px;
+    }
+
+    .designImage-l>.designImage-name>.more {
+        margin-left: 0;
+        margin-top: 5px;
+        opacity: 1;
+    }
+
+    .footmenu {
+        width: 150px;
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        height: 500px;
+        background-size: cover;
+
+    }
+
+    #section-whatICan {
+        min-height: 500px;
+        flex-wrap: wrap;
+    }
+
+    [id^=ican-box-] {
+        width: 50%;
+        margin: 30px 0;
+    }
+
+    [id^=ican-box-pic-] {
+        width: 140px;
+        height: 200px;
+        margin: 50px 0;
+    }
+
+    .contect-me {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+    .menu-name {
+        right: 5%;
+    }
+
+    #section-about {
+        width: 100%;
+        padding: 10% 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-pic {
+        width: 80%;
+        height: 250px;
+    }
+
+    #about-inf {
+        margin: 30px 0;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #about-btn {
+        width: 200px;
+        height: 60px;
+        margin: 30px 0;
+        border: 1px solid gray;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+
+    .about-inf-content {
+        color: rgb(75, 75, 75);
+        background-color: rgb(228, 222, 222);
+        padding: 5%;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-inf-content>h3 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .about-inf-content>h5 {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .about-inf-content>p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    #navbar-top {
+        height: 60px;
+    }
+
+    #navbar-top-logo {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .scroll-img.scrolling {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        top: -90px;
+    }
+
+    #menuBtn,
+    #closeBtn {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+    }
+
+    [id^="designImage"] {
+        height: 200px;
+    }
+
+    [id^=ican-box-pic-] {
+        width: 120px;
+        height: 180px;
+    }
+
+    .footmenu {
+        width: 150px;
+        text-align: center;
+        display: flex;
+    }
+
+    .footSns {
+        width: 80px;
+        text-align: center;
+        display: flex;
+        padding: 5px;
+    }
+
+    .footSns-item {
+        margin: 5px 0;
+    }
+
+}

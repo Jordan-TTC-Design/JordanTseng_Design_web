@@ -1,0 +1,391 @@
+/* 在此撰寫此專案的CSS Style */
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+.aboutme-header {
+    background-color: rgb(253, 253, 253);
+    height: 300px;
+    background-image: url(../image/aboutme/aboutme-headerPic1.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    top: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutme-firstInf-box {
+    padding: 0 10%;
+    position: relative;
+}
+
+#aboutme-firstInf {
+    color: rgb(75, 75, 75);
+    background-color: rgb(228, 222, 222);
+    padding: 6% 6%;
+    width: 500px;
+    position: relative;
+    top: -30px;
+}
+
+#aboutme-firstInf p {
+    line-height: 1.5;
+}
+
+/*=============================================
+=                  sectionAbout                  =
+=============================================*/
+.aboutme-section-about {
+    width: 100%;
+    padding: 5% 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+#about-pic {
+    height: 500px;
+    width: 300px;
+    background-image: url(../image/aboutme/Jordan.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#about-inf {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#about-name {
+    width: 60%;
+    margin-top: 20%;
+    position: relative;
+}
+
+.about-name-line {
+    position: relative;
+    width: 80px;
+    border-top: 1px solid rgb(75, 75, 75);
+    left: -100px;
+}
+
+.about-inf-content {
+    color: rgb(75, 75, 75);
+    background-color: rgb(228, 222, 222);
+    padding: 8% 10%;
+    top: 65px;
+    width: 110%;
+}
+
+.about-inf-content>p {
+    line-height: 1.5;
+}
+
+
+.Jordan-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 36px;
+}
+
+/*=============================================
+=                  Sectionskill               =
+=============================================*/
+.about-skill-bg {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 10% 10%;
+    background-image: url(../image/aboutme/aboutme-bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.about-skill-cover {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: black;
+}
+
+.skill-box-out {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 80;
+}
+
+#skill-box-inf {
+    top: -80px;
+    align-items: center;
+    color: rgb(228, 222, 223);
+}
+
+.skill-box {
+    width: 200px;
+    height: 250px;
+    border: 1px solid rgb(228, 222, 223);
+    color: rgb(228, 222, 223);
+    align-items: center;
+}
+
+.skill-box>h3,
+#skill-box-inf>h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: rgb(228, 222, 223);
+}
+
+.skill-box>ul>li {
+    list-style-type: disc;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/*=============================================
+=                  Sectionwork                  =
+=============================================*/
+.aboutme-work {
+    width: 100%;
+    height: auto;
+    /* min-height: 700px; */
+    padding: 10% 10% 10% 10%;
+    justify-content: space-around;
+}
+
+.work-box-bg {
+    width: 100%;
+    height: auto;
+    padding: 10% 5% 5% 5%;
+    color: rgb(75, 75, 75);
+    background-color: rgb(228, 222, 222);
+    justify-content: space-between;
+}
+
+.work-box-bg-white {
+    width: 100%;
+    height: auto;
+    padding: 10% 5% 5% 5%;
+    color: rgb(75, 75, 75);
+    background-color: white;
+    justify-content: space-between;
+}
+
+.work-box {
+    width: 50%;
+    height: auto;
+    padding: 5% 0 0 0;
+}
+
+.work-box>h1 {
+    font-size: 64px;
+    padding: 0 20px;
+    border-right: 1px solid rgb(75, 75, 75);
+}
+
+.work-box-inf {
+    width: 70%;
+    padding: 5px;
+}
+
+.work-box-number {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.work-box-number>h1 {
+    font-size: 56px;
+}
+
+.work-box-inf>h2,
+.work-box-inf>p,
+#work-box-title>h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.work-box-inf>p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#work-box-title {
+    top: 20px;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    color: rgb(75, 75, 75);
+}
+
+/*=============================================
+=                  SectionWhatICan             =
+=============================================*/
+#section-whatICan {
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 5% 10%;
+    justify-content: space-around;
+}
+
+/*=============================================
+=                  Footer                     =
+=============================================*/
+
+@media (max-width:800px) {
+    .aboutme-header,.about-skill-bg  {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+    
+    .aboutme-firstInf-box {
+        padding: 0 20%;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    #aboutme-firstInf {
+        width: 400px;
+        top: -60px;
+    }
+
+    .aboutme-section-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-pic {
+        height: 500px;
+        width: 80%;
+    }
+
+    #about-inf {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #about-name {
+        margin-top: 30px;
+    }
+
+    .about-inf-content {
+        color: rgb(75, 75, 75);
+        background-color: rgb(228, 222, 222);
+        padding: 8% 10%;
+        top: 0;
+        width: 100%;
+    }
+
+    .about-inf-content>p {
+        line-height: 1.8;
+    }
+
+    .skill-box-out {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        z-index: 80;
+    }
+
+    #skill-box-inf {
+        position: relative;
+        top: -30px;
+    }
+
+    .skill-box {
+        width: 260px;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .work-box-bg,
+    .work-box-bg-white {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+
+    #work-box-title {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .work-box {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .aboutme-header {
+        top: 60px;
+        /* height: 150px; */
+        margin-bottom: 0;
+    }
+
+    .aboutme-firstInf-box {
+        padding: 0 10%;
+    }
+
+    #aboutme-firstInf {
+        width: 100%;
+        top: -30px;
+        font-size: 10px;
+    }
+
+    .aboutme-section-about {
+        margin-bottom: 0;
+    }
+
+    #about-pic {
+        height: 300px;
+        width: 100%;
+    }
+
+    #about-inf {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .work-box {
+        margin: 20px 0;
+    }
+    .work-box li,.skill-box li{
+font-size: 10px;
+    }
+    #about-name {
+        margin-top: 0;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .Jordan-title {
+        font-size: 14px;
+
+    }
+
+    #skill-box-inf {
+        position: relative;
+        top: -10px;
+    }
+}
